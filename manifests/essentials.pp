@@ -13,15 +13,17 @@ class essentials {
   }
 
   package {
-    "curl":
+    "bash-completion": 
       ensure => installed;
-    "libssl-dev":
+    "build-essential":
+      ensure => installed;
+    "curl":
       ensure => installed;
     "git-core":
       ensure => installed;
-    "python":
+    "libssl-dev":
       ensure => installed;
-    "build-essential":
+    "python":
       ensure => installed;
     "unzip":
       ensure => installed;
