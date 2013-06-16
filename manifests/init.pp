@@ -12,3 +12,7 @@ $node_version = "v0.10.11"
 class { 'nvm':
   node_version => $node_version,
 }
+
+class { 'phantomjs': 
+  version => '1.9.1'
+}

@@ -26,4 +26,9 @@ class nvm ($node_version) {
     command => "echo 'source /home/vagrant/.nvm/nvm.sh' >> /home/vagrant/.bashrc",
     onlyif => "grep -q 'source /home/vagrant/.nvm/nvm.sh' /home/vagrant/.bashrc; test $? -eq 1",
   }
+
+  exec { "chmod-dirs":
+    command => "sudo chmod 777 /home/vagrant/.nvm/; sudo chmod 777 /home/vagrant/.nvm/bin/",
+    require => Exec["set-node-version"],
+  }
 }
