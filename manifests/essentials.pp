@@ -39,27 +39,7 @@ class essentials {
 
   append_if { git-helpers:
     file => "/home/vagrant/.bashrc",
-    line => "# git helpers
-            alias gd=\"git diff\"
-            alias ga=\"git add\"
-            alias gr=\"git rm\"
-            alias gbd=\"git branch -D\"
-            alias gst=\"git status\"
-            alias gca=\"git commit -a -m\"
-            alias gm=\"git merge --no-ff\"
-            alias gpt=\"git push --tags\"
-            alias gp=\"git push\"
-            alias grh=\"git reset --hard\"
-            alias gb=\"git branch\"
-            alias gcob=\"git checkout -b\"
-            alias gco=\"git checkout\"
-            alias gba=\"git branch -a\"
-            alias gcp=\"git cherry-pick\"
-            alias gl=\"git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph\"
-            alias gpom=\"git pull origin master\"
-            alias gpos=\"git pull origin staging\"
-            alias gpop=\"git pull origin production\"
-            alias gcd='cd \"`git rev-parse --show-toplevel`\"'",
+    line => "\n# git helpers\nalias gd=\"git diff\"\nalias ga=\"git add\"\nalias gr=\"git rm\"\nalias gbd=\"git branch -D\"\nalias gst=\"git status\"\nalias gca=\"git commit -a -m\"\nalias gm=\"git merge --no-ff\"\nalias gpt=\"git push --tags\"\nalias gp=\"git push\"\nalias grh=\"git reset --hard\"\nalias gb=\"git branch\"\nalias gcob=\"git checkout -b\"\nalias gco=\"git checkout\"\nalias gba=\"git branch -a\"\nalias gcp=\"git cherry-pick\"\nalias gl=\"git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph\"\nalias gpom=\"git pull origin master\"\nalias gpos=\"git pull origin staging\"\nalias gpop=\"git pull origin production\"\nalias gcd='cd \"`git rev-parse --show-toplevel`\"'",
     test => "# git helpers",
   }
 }
